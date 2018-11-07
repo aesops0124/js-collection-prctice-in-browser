@@ -15,7 +15,7 @@ describe('practice-1-3', () => {
 });
 function collectSameElements(collectionA, collectionB) {
   const collectionB_values = Object.values(collectionB);
-  var collectionResult = [];
+  const collectionResult = [];
   var m = 0;
   for (var i = 0; i < collectionA.length; i++) {
     for (var j = 0; j < collectionB_values.length; j++) {
