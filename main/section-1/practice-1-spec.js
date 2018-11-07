@@ -3,18 +3,18 @@
 
 describe('practice-1-1', () => {
 
-  var collectionA = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd'];
-  var collectionB = ['a', 'd', 'e', 'f'];
+  const collectionA = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd'];
+  const collectionB = ['a', 'd', 'e', 'f'];
 
   it('Get the same elements both in Collection A and Collection B', () => {
 
-    var result = collectSameElements(collectionA, collectionB);
+    const result = collectSameElements(collectionA, collectionB);
 
     expect(result).toEqual(['a', 'e', 'f', 'd']);
   });
 });
- function collectSameElements(collectionA, collectionB) {
-  var collectionResult = ['a', 'e', 'f', 'd'];
+function collectSameElements(collectionA, collectionB) {
+  const collectionResult = [];
   var k = 0;
     for (var i = 0; i < collectionA.length; i++) {
       for (var j = 0; j < collectionB.length; j++) {
@@ -24,5 +24,6 @@ describe('practice-1-1', () => {
         }
       }
     }
+    console.log(collectionResult);
     return collectionResult;
 }
