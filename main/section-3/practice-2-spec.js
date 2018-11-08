@@ -14,7 +14,7 @@ describe('practice-3-2', () => {
     {key: 'b', count: 6},
     {key: 'd', count: 5}
   ];
-
+  
   const objectB = {value: ['a', 'd', 'e', 'f']};
 
   it('Get the same elements both in key properties of Collection A and value property of Collection B, then let the count minus 1 if count full 3 and output the new collection', () => {

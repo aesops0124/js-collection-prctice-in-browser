@@ -32,7 +32,7 @@ function push(result,key,count){
             result.push(key); 
   }   
 }
-function expand(collection){ //To transfrom d-5 to "d","d","d","d","d"
+function expand(collection){
   let result = [];
   for(let item of collection){
     if(item.length > 1){

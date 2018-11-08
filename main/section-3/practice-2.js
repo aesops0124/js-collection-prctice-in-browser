@@ -7,7 +7,11 @@ function createUpdatedCollection(collectionA, objectB) {
   for(var i=0; i<objectB_value.length; i++){
     for (var j=0; j<result.length; j++){
       if (result[j]['key']==objectB_value[i]) {
-        result[j]['count'] = result[j]['count']-1;
+        if(result[j]['count']/3<1) {
+        }
+        else {
+          result[j]['count']=result[j]['count']-Math.floor(result[j]['count']/3);
+        }
         console.log(result[j]['count']);
       }
     }
